@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Directorios de sesiones/archivos temporales
+sessions/
+session-data/
+uploads/
+
+# Sesiones whatsapp-web.js
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Environment variables
+.env
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de build / dist
+dist/
+build/
+
+# Otros archivos temporales
+*.tmp
+*.temp
