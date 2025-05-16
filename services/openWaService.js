@@ -12,7 +12,10 @@ class OpenWaService {
   async startSession(sessionId) {
     if (!this.clients.has(sessionId)) {
       const client = new Client({
-        authStrategy: new LocalAuth({ clientId: sessionId }), // Usa LocalAuth para evitar escanear el QR cada vez
+        authStrategy: new LocalAuth({ clientId: sessionId }),
+        puppeteer: {
+          args: ["--no-sandbox", "--disable-setuid-sandbox"],
+        },
       });
 
       // Evento para mostrar el QR cuando se genere
